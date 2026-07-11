@@ -10,7 +10,7 @@ body {
 
 .header,
 .hero {
-  --color-accent: #f0603c;
+  --color-accent: #ff7757;
 }
 
 /* Header Styles */
@@ -34,7 +34,7 @@ body {
 
 .brand-logo img {
   display: block;
-  height: 22px;
+  height: 36px;
 }
 
 .main-nav {
@@ -48,12 +48,25 @@ body {
   font-size: 15px;
   opacity: 0.85;
   padding-bottom: 4px;
+  position: relative;
 }
 
-.main-nav a.active {
-  opacity: 1;
-  font-weight: 500;
-  border-bottom: 2px solid #fff;
+/* Animated underline */
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 240ms ease;
+}
+
+.main-nav a:hover::after {
+  transform: scaleX(1);
 }
 
 .header-right {
@@ -77,41 +90,39 @@ body {
 .header-action.signup {
   background: var(--color-accent);
   color: #fff;
-  border-radius: 999px;
+  border-radius: 8px;
   padding: 12px 26px;
 }
 
 /* Hero Styles */
 .hero {
   position: relative;
-  min-height: 760px;
+  min-height: 1194px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   padding-top: 220px;
   color: #fff;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(10, 20, 25, 0.5) 0%,
-      rgba(10, 20, 25, 0.15) 35%,
-      rgba(10, 20, 25, 0.55) 100%
-    ),
-    url("./src/images/ac7b431655447d05c75fa3f3de352e02b80a7bbf.jpg") center /
-      cover no-repeat;
+  background-image: url("./src/images/ac7b431655447d05c75fa3f3de352e02b80a7bbf.jpg");
+  background-position: center 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
-  max-width: 640px;
-  padding: 0 40px 0 100px;
+  max-width: 720px;
+  width: 100%;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: left;
 }
 
 .hero-title {
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-size: 52px;
-  line-height: 1.2;
+  font-size: 56px;
+  line-height: 1.1;
   margin-bottom: 20px;
 }
 
@@ -150,8 +161,10 @@ body {
   border: none;
   color: #fff;
   font-size: 12px;
+  line-height: 0.8;
   cursor: pointer;
   opacity: 0.8;
+  padding: 0;
 }
 
 /* Booking bar */
