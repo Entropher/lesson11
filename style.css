@@ -8,11 +8,6 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-.header,
-.hero {
-  --color-accent: #ff7757;
-}
-
 /* Header Styles */
 .header {
   position: absolute;
@@ -22,14 +17,22 @@ body {
   z-index: 10;
 }
 
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+.container {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 28px 40px;
+  padding-inline: 40px;
+}
+
+.header .container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 40px;
+  padding-block: 28px;
+}
+
+.brand-logo {
+  justify-self: start;
 }
 
 .brand-logo img {
@@ -40,6 +43,7 @@ body {
 .main-nav {
   display: flex;
   gap: 32px;
+  justify-self: center;
 }
 
 .main-nav a {
@@ -59,7 +63,7 @@ body {
   right: 0;
   bottom: 0;
   height: 2px;
-  background: var(--color-accent);
+  background: #ff7757;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 240ms ease;
@@ -73,6 +77,7 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+  justify-self: end;
 }
 
 .header-action {
@@ -88,10 +93,10 @@ body {
 }
 
 .header-action.signup {
-  background: var(--color-accent);
+  background: #ff7757;
   color: #fff;
   border-radius: 8px;
-  padding: 12px 26px;
+  padding: 18px 26px;
 }
 
 /* Hero Styles */
@@ -101,7 +106,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
   padding-top: 220px;
   color: #fff;
   background-image: url("./src/images/ac7b431655447d05c75fa3f3de352e02b80a7bbf.jpg");
@@ -111,14 +115,15 @@ body {
 }
 
 .hero-content {
-  max-width: 720px;
   width: 100%;
-  margin: 60px auto;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: left;
 }
 
 .hero-title {
+  max-width: 720px;
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 56px;
@@ -153,7 +158,7 @@ body {
 .hero-dots .dot.active {
   width: 10px;
   height: 10px;
-  background: var(--color-accent);
+  background: #ff7757;
 }
 
 .dot-nav {
@@ -169,19 +174,21 @@ body {
 
 /* Booking bar */
 .booking-bar {
+  position: absolute;
+  left: 0;
+  top: 52%;
   display: flex;
   align-items: stretch;
   width: 100%;
   max-width: 1240px;
-  margin: 0 auto;
-  background: #fff;
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0 25px 45px rgba(0, 0, 0, 0.15));
 }
 
 .booking-field {
   flex: 1;
-  padding: 26px 30px;
+  padding: 38px 30px;
   border-right: 1px solid #ececec;
+  background: #fff;
 }
 
 .booking-field label {
@@ -211,17 +218,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 10px;
+  width: 108px;
+  min-width: 108px;
   border: none;
-  background: var(--color-accent);
+  background: #ff7757;
   color: #fff;
   font-family: "Playfair Display", serif;
   font-size: 20px;
-  padding: 0 44px;
+  padding: 38px 12px;
   cursor: pointer;
-  white-space: nowrap;
+  flex-shrink: 0;
+  border-radius: 0 12px 12px 0;
+}
+
+.book-now-label {
+  line-height: 1.15;
+  text-align: center;
 }
 
 .book-now .arrow {
   font-size: 18px;
+  flex-shrink: 0;
 }
