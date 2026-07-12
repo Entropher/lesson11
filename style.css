@@ -110,3 +110,20 @@ body{
   font-weight: 400;
   margin-button:10px;
 }
+.stars{
+  color:#ffC107;
+  margin-bottom: 18px;
+}
+
+.stars i{
+  margin-right: 2px;
+}
+
+.card-content p{
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-buttom:25px;
+}
+
+/* price */
