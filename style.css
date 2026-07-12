@@ -21,3 +21,58 @@ body{
   justify-content: space-between;
   margin-bottom: 60px;
 }
+/* Buttons */
+.slider-buttons{
+  display: flex;
+  gap: 20px;
+}
+
+.slider-buttons button{
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev{
+  background:#1E2A39;
+}
+
+.next{
+  background: #FF7757;
+}
+
+.slider-buttons button:hover{
+  opacity: .9;
+}
+.slider-buttons img{
+  width: 12px;
+}
+
+/* Header text */
+.header-text{
+  text-align: right;
+}
+
+.header-text h2{
+  font-size: 48px;
+  color: #172432;
+  margin-bottom:10px;
+  font-family:Playfair Display;
+  font-weight: 400;
+}
+
+.header-text img{
+  margin-bottom: 15px;
+}
+
+.header-text p{
+  color:#767E86
+  font-size:18px;
+}
+
+/* Cards */
