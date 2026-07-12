@@ -50,7 +50,7 @@ body{
   opacity: .9;
 }
 .slider-buttons img{
-  width: 12px;
+  width: 8px;
 }
 
 /* Header text */
@@ -71,7 +71,7 @@ body{
 }
 
 .header-text p{
-  color:#767E86
+  color:#767E86;
   font-size:18px;
 }
 
@@ -108,7 +108,7 @@ body{
   color: #767E86;
   font-size: 28px;
   font-weight: 400;
-  margin-button:10px;
+  margin-bottom:10px;
 }
 .stars{
   color:#ffC107;
@@ -123,7 +123,7 @@ body{
   color: #555;
   font-size: 14px;
   line-height: 1.6;
-  margin-buttom:25px;
+  margin-bottom:25px;
 }
 
 /* price */
@@ -131,17 +131,22 @@ body{
   display:flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
-.price span{
+.price {
   color:#767E86;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  
 }
-.price h4{
+.price span{
   color: #FF7757;
   font-size:32px;
   font-weight: 500;
-  margin-top: 5px;
+  padding-left: 5px;
 }
+
 
 /* Button */
 
@@ -154,4 +159,52 @@ body{
   color: white;
   cursor:pointer;
   transition:.3s;
+}
+
+.price-box button:hover{
+  background: #ff6240;
+}
+/* Responsive */
+
+@media (max-width:768px){
+
+      .special-offer{
+      margin: 60px auto;
+    }
+
+      .offer-header{
+      flex-direction: column;
+      gap:30px;
+      text-align:center;
+    }
+      .header-text{
+      text-align: center;
+    }
+      .header-text h2{
+      font-size: 36px;
+    }
+      .header-text p{
+      font-size: 16px;
+    }
+      .cards{
+      flex-direction: column;
+      align-items: center;
+    }
+      .card{
+      width:100%;
+      max-width: 420px;
+    }
+      .price-box{
+      flex-direction: column;
+      gap:20px;
+      align-items:flex-start ;
+    }
+      .price-box button{
+      width: 100%;
+    }
+}
+
+@media(max-width:1024px){
+
+
 }
