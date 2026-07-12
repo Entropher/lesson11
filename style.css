@@ -127,3 +127,31 @@ body{
 }
 
 /* price */
+.price-box{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price span{
+  color:#767E86;
+  font-size: 14px;
+}
+.price h4{
+  color: #FF7757;
+  font-size:32px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+/* Button */
+
+.price-box button{
+  width: 120px;
+  height: 45px;
+  border: none;
+  border-radius:8px;
+  background: #ff7757;
+  color: white;
+  cursor:pointer;
+  transition:.3s;
+}
