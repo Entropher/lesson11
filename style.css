@@ -3,3 +3,21 @@
   margin: 0;
   padding: 0;
 }
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+/* Section */
+.special-offer{
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+/* Header */
+.offer-header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
