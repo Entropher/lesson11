@@ -182,7 +182,6 @@ body {
 .dot-nav {
   background: none;
   border: none;
-  cursor: pointer;
   opacity: 0.8;
   padding: 0;
   line-height: 0;
@@ -202,12 +201,11 @@ body {
 .booking-bar {
   position: absolute;
   left: 0;
-  top: 52%;
+  top: 55%;
   display: flex;
   align-items: stretch;
   width: 100%;
   max-width: 1240px;
-  filter: drop-shadow(0 25px 45px rgba(0, 0, 0, 0.15));
 }
 
 .booking-field {
@@ -220,7 +218,6 @@ body {
 .booking-field label {
   display: block;
   font-size: 11px;
-  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #9a9a9a;
   margin-bottom: 10px;
@@ -253,7 +250,6 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 20px;
   padding: 38px 12px;
-  cursor: pointer;
   flex-shrink: 0;
   border-radius: 0 12px 12px 0;
 }
@@ -265,7 +261,6 @@ body {
 
 .book-now .arrow {
   font-size: 18px;
-  flex-shrink: 0;
 }
 
 /* Tablet — 1024px */
@@ -347,8 +342,8 @@ body {
     min-height: 100dvh;
     padding-top: 110px;
     padding-bottom: 0;
-    background-position: center center;
-    background-size: cover;
+    background-size: auto 135%;
+    background-position: center bottom;
     justify-content: flex-start;
   }
 
@@ -357,7 +352,6 @@ body {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.28);
-    pointer-events: none;
   }
 
   .hero-content,
@@ -398,7 +392,6 @@ body {
     margin: 0;
     border-radius: 12px 12px 0 0;
     overflow: hidden;
-    filter: none;
   }
 
   .booking-field {
@@ -431,7 +424,6 @@ body {
 
   .booking-field select {
     appearance: none;
-    -webkit-appearance: none;
     background: transparent;
   }
 
@@ -445,7 +437,6 @@ body {
     border-right: 1.5px solid #1a1a1a;
     border-bottom: 1.5px solid #1a1a1a;
     transform: rotate(45deg);
-    pointer-events: none;
   }
 
   .book-now {
