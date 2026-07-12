@@ -654,8 +654,13 @@ body {
 /* Popular destinations hero2 */
 
 .hero-2 {
-  padding: 60px 20px;
-  background-color: white;
+  padding: 60px 8%;
+  background-color: #ffffff;
+}
+
+.popular-destinations {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .destinations-top-bar {
@@ -666,9 +671,9 @@ body {
 }
 
 .heading2 {
-  font-size: 36px;
+  font-size: 32px;
   color: #172b4d;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .p2 {
@@ -682,6 +687,7 @@ body {
   height: 400px;
   border-radius: 16px;
   overflow: hidden;
+  width: 400px;
 }
 
 .destination-card img {
@@ -697,4 +703,15 @@ body {
   width: 100%;
   padding: 20px;
   background-color: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.text-block .text {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.cards-p {
+  font-size: 14px;
+  color: #e2e8f0;
 }
