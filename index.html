@@ -30,6 +30,11 @@
           <button class="header-action login">Login</button>
           <button class="header-action signup">Sign up</button>
         </div>
+        <button class="menu-toggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
 
@@ -48,8 +53,12 @@
           <span class="dot"></span>
           <span class="dot"></span>
           <span class="dot"></span>
-          <button class="dot-nav" aria-label="Previous slide">&and;</button>
-          <button class="dot-nav" aria-label="Next slide">&or;</button>
+          <button class="dot-nav" aria-label="Previous slide">
+            <img src="./src/images/Vector.png" alt="" />
+          </button>
+          <button class="dot-nav dot-nav--next" aria-label="Next slide">
+            <img src="./src/images/Vector.png" alt="" />
+          </button>
         </div>
 
         <div class="booking-bar">
@@ -61,7 +70,7 @@
             <label for="person">Person</label>
             <select id="person">
               <option>1</option>
-              <option>2</option>
+              <option selected>2</option>
               <option>3</option>
               <option>4+</option>
             </select>
