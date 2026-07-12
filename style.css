@@ -76,3 +76,37 @@ body{
 }
 
 /* Cards */
+.cards{
+  display: flex;
+  justify-content: space-between;
+  gap:30px;
+}
+
+.card{
+  width: cal((100%-60px)/3);
+  background: #fff8f1;
+  border-radius: 20px;
+  overflow:hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.card:hover{
+  transform: translateY(-8px);
+}
+.card img{
+  width: 100%;
+  display: block;
+}
+
+/* Card content */
+.card-content{
+  padding: 22px;
+}
+
+.card-content h3{
+  color: #767E86;
+  font-size: 28px;
+  font-weight: 400;
+  margin-button:10px;
+}
