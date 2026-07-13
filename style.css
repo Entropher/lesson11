@@ -674,12 +674,13 @@ body {
   font-size: 48px;
   font-family: "Playfair Display", serif;
   color: #172432;
+  border-bottom: 15px solid #ff7757;
 }
 
 .p2 {
   font-size: 15px;
   color: #7a869a;
-  max-width: 450px;
+  max-width: 500px;
 }
 
 .destinations-cards {
