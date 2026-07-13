@@ -671,9 +671,9 @@ body {
 }
 
 .heading2 {
-  font-size: 32px;
-  color: #172b4d;
-  margin-bottom: 12px;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: #172432;
 }
 
 .p2 {
