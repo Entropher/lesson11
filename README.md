@@ -1,4 +1,4 @@
-# Lesson 11 — Travellian
+# Lesson 11 – Travellian
 
 A responsive travel landing page built with HTML and CSS.
 
@@ -9,10 +9,10 @@ Travellian is a single-page travel website that presents trip booking, popular d
 
 ## Features
 
-- **Header** — logo, navigation links, login/sign-up actions, and a mobile menu toggle
-- **Hero section** — headline, subtitle, slide indicators, and a booking bar (destination, guests, check-in/out)
-- **Popular Destinations** — horizontal destination cards with location details
-- **Special Offers** — travel package cards with ratings, descriptions, and pricing
+- **Header** – logo, navigation links, login/sign-up actions, and a mobile menu toggle
+- **Hero section** – headline, subtitle, slide indicators, and a booking bar (destination, guests, check-in/out)
+- **Popular Destinations** – horizontal destination cards with location details
+- **Special Offers** – travel package cards with ratings, descriptions, and pricing
 
 
 ## Project Structure
@@ -32,6 +32,6 @@ lesson11/
 | Breakpoint | Target |
 |------------|--------|
 | `> 1024px` | Desktop |
-| `≤ 1024px` | Tablet — adjusted hero, booking bar, and typography |
-| `≤ 768px` | Mobile — collapsed nav, stacked booking fields, single-column cards |
+| `≤ 1024px` | Tablet – adjusted hero, booking bar, and typography |
+| `≤ 768px` | Mobile – collapsed nav, stacked booking fields, single-column cards |
 
